@@ -1,2 +1,9 @@
 # font-resize-plugin
-font-resize
+
+### use
+
+	<div class="font-resize-group"></div>
+	<script>
+		$('.font-resize-group').FontResize();
+	</script>
+

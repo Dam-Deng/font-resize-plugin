@@ -1,0 +1,58 @@
+.font-resize-group {
+    display: inline-block;
+    color: #555;
+    font-weight: bold;
+    margin-left: 5px;
+    vertical-align: middle;
+    .font-resize {
+        display: table-cell;
+        height: 16px;
+        padding: 0 8px;
+        border-right: 2px solid #fff;
+        color: #555;
+        line-height: 22px;
+        background: #ebebeb;
+        vertical-align: baseline;
+        cursor: pointer;
+        &:hover {
+            background: #549036;
+            color: #fff;
+            .font-A {
+                display: none;
+            }
+            .font-hover {
+                display: inline;
+            }
+        }
+    }
+    .font-A {
+        display: inline;
+    }
+    .font-hover {
+        display: none;
+    }
+    .font-small {
+        font-size: 12px;
+    }
+    .font-medium {
+        font-size: 15px;
+    }
+    .font-large {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 767px) {
+    .font-resize-group {
+        display: block;
+        margin-left: 0;
+        .font-resize {
+            display: inline-block;
+            height: 30px;
+            border-right: 1px solid #fff;
+            line-height: 30px;
+            width: 33.333%;
+            vertical-align: middle;
+        }
+    }
+}
